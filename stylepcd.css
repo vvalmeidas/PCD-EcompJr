@@ -1,0 +1,63 @@
+.descricaoicone {
+    font-family: 'Open Sans';    
+    font-size: 80%;
+}
+
+.icone {
+    margin: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+.icone:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */    
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px); 
+    -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(40%);     
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+h3.membro {
+    font-family: 'Open Sans';    
+}
+
+span.membro {
+    font-family: arial;
+    font-weight: bolder;    
+    font-size: 40%;
+    color: #2a3e85;
+}
+
+p.membro {
+    font-size: 80%;
+    font-weight: bolder;        
+}
+
+
+#AD {
+    margin-left: 100px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
