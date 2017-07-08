@@ -11,15 +11,11 @@
 }
 
 .icone:hover {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin:-60px 0 0 -60px;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */    
+    opacity: 0.35;
+    filter: alpha(opacity=35); /* For IE8 and earlier */    
     -webkit-filter: blur(1px);
     -moz-filter: blur(1px);
     -o-filter: blur(1px);
@@ -32,6 +28,11 @@
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+.post-content:hover {
+    background: none repeat scroll 0 0;
+    margin: -100px 210px 12px; 
+    position: absolute;
+}
 
 h3.membro {
     font-family: 'Open Sans';    
