@@ -14,24 +14,34 @@ body {
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
-hr {
-  border-color: #F05F40;
+hr{
   border-width: 3px;
   max-width: 50px;
 }
 hr.light {
   border-color: white;
 }
+hr.dark{
+  border-color: #75768E;
+}
+.bgRight{
+  background-image: url('images/ecomp/logo1.png'), url('images/ecomp/logo2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 1120px, 0;
+  
+}
+.bgLeft{
+  background-image: ;
+  background-repeat: no-repeat;
+  background
+
+}
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
 }
-a:hover,
-a:focus {
-  color: #eb3812;
-}
+
 h1,
 h2,
 h3,
@@ -40,13 +50,24 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
-p {
+.h2.blue{
+  color:  #124571;
+}
+.h4.blue{
+  color: #2a3e85;
+}
+p{
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.bg-primary {
-  background-color: #F05F40;
+.p-dark{
+  color:#556088;
+  font-size:16px;
+}
+.bg-gray{
+  background-color: #FFFFFF;
+  color: #273D90;
 }
 .bg-dark {
   background-color: #222222;
@@ -73,16 +94,7 @@ aside {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-.navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
-}
+
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
   font-size: 12px;
@@ -96,15 +108,7 @@ aside {
   font-size: 13px;
   color: #222222;
 }
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
-}
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
-  background-color: transparent;
-}
+
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
@@ -132,23 +136,7 @@ aside {
   .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
-  }
-  .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
-    font-size: 14px;
-  }
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
-  }
-  .navbar-default.affix .nav > li > a,
-  .navbar-default.affix .nav > li > a:focus {
-    color: #222222;
-  }
-  .navbar-default.affix .nav > li > a:hover,
-  .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
-  }
+
 }
 
 header {
