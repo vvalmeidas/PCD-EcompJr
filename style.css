@@ -2,7 +2,13 @@
     background-color: #CDCBDD;
 
 }
-
+#t{
+      -webkit-transition: background-image 1s ease-in-out;
+    -moz-transition: background-image 1s ease-in-out;
+    -ms-transition: background-image 1s ease-in-out;
+    -o-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+}
 .a{
     color: #3A3B48; 
 }
@@ -151,6 +157,7 @@ header {
   background-color:#3A3B48;
   text-align: center;
   color: white;
+  
 }
 header .header-content {
   position: relative;
