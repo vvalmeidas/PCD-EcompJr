@@ -6,4 +6,12 @@ $(document).ready(function(){
                         
                         }).fadeTo('slow', 1);
     });
+
+    var $doc = $('html, body');
+    $('.scrollSuave').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
 });
