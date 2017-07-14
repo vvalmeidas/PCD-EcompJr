@@ -1,27 +1,21 @@
 .nomeMembro {
-    font-family: 'Open Sans';
-    margin-top: 200px;
-    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 210px;
+    margin-left: 50px;
 }
 
-
 .classificacaoMembro {
-    font-family: arial;
-    font-weight: bolder;    
+    font-family: Helvetica;
+    font-weight: bold;    
     font-size: 40%;
-    color: #2a3e85;
-    margin-top: 5px;
+    color: #266fb7;
+    margin-top: 1px;
     margin-left: 60px;
     margin-bottom: 20px;
 }
 
-.img-center {
-	margin: 0 auto;
-}
-
-
 .pontuacaoTexto {
-    font-family: 'Open Sans'; 
+    font-family: 'Raleway', sans-serif;
 }
 
 /* ============================================================
@@ -33,19 +27,19 @@
   float: left;
   overflow: hidden;
   margin-left: 40px;
-  border:2px solid #2a3e85;
+  border: 3px solid #2a3e85;
   width: 200px;
   height: 200px;
   border-radius: 200px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;  
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;  
   
 }
 
 .overlay {
   position: absolute;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   transition: all 0.5s;
 }
@@ -54,11 +48,9 @@ a.close-overlay {
   display: block;
   position: absolute;
   font-size: 20px;
-  font-weight: 700;
   color: #fff;
   text-align: center;
   background-color: #000;
-  cursor: pointer;
 }
 a.close-overlay.hidden {
   display: none;
@@ -70,7 +62,6 @@ a.expand {
   z-index: 100;
   text-align: center;
   color: whitesmoke;
-  line-height: 50px;
   font-weight: 700;
   font-size: 25px;
   border-radius: 30px;
@@ -86,12 +77,16 @@ a.expand {
   right: 0;
   width: 100%;
   height: 0;
+  text-decoration: none;  
 }
 #effect-1 .overlay a.expand {
   left: 0;
   right: 0;
   top: 50%;
+  text-decoration: none;  
 }
 #effect-1 .img.hover .overlay {
   height: 100%;
+  text-decoration: none;  
 }
+

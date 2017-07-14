@@ -25,8 +25,8 @@
 
 .navbar{
     background-color: #CDCBDD;
-
 }
+  
 #t{
       -webkit-transition: background-image 1s ease-in-out;
     -moz-transition: background-image 1s ease-in-out;
@@ -235,3 +235,4 @@ header .header-content .header-content-inner p {
   max-width: 400px;
   margin: 50px auto 0;
 }
+

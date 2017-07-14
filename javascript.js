@@ -53,9 +53,32 @@ $(document).ready(function () {
     $(".img").mouseenter(function () {
         $(this).addClass("hover");
     })
-        // handle the mouseleave functionality
-        .mouseleave(function () {
-            $(this).removeClass("hover");
+    // handle the mouseleave functionality
+    $(".img").mouseleave(function () {
+        $(this).removeClass("hover");
+    });
+
+    (function ($) {
+        $(document).ready(function () {
+
+            // hide .navbar first
+            $("nav").hide();
+
+            // fade in .navbar
+            $(function () {
+                $(window).scroll(function () {
+
+                    // set distance user needs to scroll before we start fadeIn
+                    if ($(this).scrollTop() > 550) {
+                        $('nav').fadeIn();
+                    } else {
+                        $('nav').fadeOut();
+                    }
+                });
+            });
+
         });
+    }(jQuery));
+
 
 });
