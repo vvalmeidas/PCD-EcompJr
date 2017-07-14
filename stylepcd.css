@@ -1,64 +1,97 @@
-.descricaoicone {
-    font-family: 'Open Sans';    
-    font-size: 80%;
+.nomeMembro {
+    font-family: 'Open Sans';
+    margin-top: 200px;
+    margin-left: 40px;
 }
 
-.icone {
-    margin: 2px;
-    border-radius: 2px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-}
 
-.icone:hover {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear;
-    opacity: 0.35;
-    filter: alpha(opacity=35); /* For IE8 and earlier */    
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px); 
-    -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(40%);     
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-.post-content:hover {
-    background: none repeat scroll 0 0;
-    margin: -100px 210px 12px; 
-    position: absolute;
-}
-
-h3.membro {
-    font-family: 'Open Sans';    
-}
-
-span.membro {
+.classificacaoMembro {
     font-family: arial;
     font-weight: bolder;    
     font-size: 40%;
     color: #2a3e85;
-}
-
-p.membro {
-    font-size: 80%;
-    font-weight: bolder;        
-}
-
-
-#AD {
-    margin-left: 100px;
+    margin-top: 5px;
+    margin-left: 60px;
+    margin-bottom: 20px;
 }
 
 .img-center {
 	margin: 0 auto;
 }
 
-footer {
-    margin: 50px 0;
+
+.pontuacaoTexto {
+    font-family: 'Open Sans'; 
+}
+
+/* ============================================================
+  GLOBAL
+============================================================ */
+
+.effects .img {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-left: 40px;
+  border:2px solid #2a3e85;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;  
+  
+}
+
+.overlay {
+  position: absolute;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+
+a.expand {
+  display: block;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  color: whitesmoke;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 25px;
+  border-radius: 30px;
+  margin-top: -20px;
+}
+
+/* ============================================================
+  EFFECT 1 - SLIDE IN BOTTOM
+============================================================ */
+#effect-1 .overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+#effect-1 .overlay a.expand {
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+#effect-1 .img.hover .overlay {
+  height: 100%;
 }
