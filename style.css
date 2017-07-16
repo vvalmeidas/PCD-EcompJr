@@ -13,10 +13,10 @@
 #mascara{
     display:none;
     position:fixed;
- top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index:9000;
     background-color:#000;
 }
@@ -58,7 +58,7 @@ hr.dark{
 .bgRight{
   background-image: url('images/ecomp/logo1.png'), url('images/ecomp/logo2.png');
   background-repeat: no-repeat, no-repeat;
-  background-position-x: 1120px, 0;
+  background-position-x: 1120px, -80px;
   
 }
 
