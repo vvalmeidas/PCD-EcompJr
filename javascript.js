@@ -1,13 +1,55 @@
 $(document).ready(function () {
-    $("h1").mouseenter(function () {
+   $("h1").mouseenter(function () {
 
-        $("header").css({
+        $("logo").css({
+
             'background-image': 'url(images/ecomp/logo.png)', 'transition': 'background-image 10s',
             'background-repeat': 'no-repeat', 'background-position': 'center', 'background-size': '300px'
 
         }).show(1000);
     });
 
+/*  ==========================================
+    Title appearing effect
+    ========================================== */
+    var appear = false;
+    (function() {
+    var node = document.getElementById('message'),
+        message = "Programa de Controle Disciplinar",
+        current = message.split("").reverse(),
+        interval = setInterval(function() {
+        if (current.length)
+            node.innerHTML += current.pop();
+        else
+            clearInterval(interval);
+            appear = true;
+        }, 100);
+    }());
+
+    //$("#logo").hide();
+
+/*  ======================================
+    Description fade in
+    ====================================== */
+
+    $("#txtheader").hide();
+    $("h1").mouseenter(function(){ 
+        if(appear){
+            //$("#txtheader").show().delay(200);          
+            //Sem parâmetros: o efeito é executado em 400ms
+            $("#txtheader").fadeIn();
+            //Parâmetro com a duração em ms do efeito
+            $("#txtheader").fadeIn(1000);
+            //Parâmetro slow: o efeito é executado em 600ms
+            $("#txtheader").fadeIn("slow");
+            //Parâmetro fast: o efeito é executado em 200ms
+            $("#txtheader").fadeIn("fast");
+        }
+    });
+
+/*  =====================================
+    Soft scroll
+    ==================================== */
     var $doc = $('html, body');
     $('.scrollSuave').click(function () {
         $doc.animate({
@@ -16,12 +58,14 @@ $(document).ready(function () {
         return false;
     });
 
+/* =====================================
+    Modal windown
+    ==================================== */
+
     $("a[rel=modal]").click(function (ev) {
         ev.preventDefault();
 
         var id = $(this).attr("href");
-
-
 
         var alturaTela = $(document).height();
         var larguraTela = $(window).width();
@@ -79,6 +123,8 @@ $(document).ready(function () {
 
         });
     }(jQuery));
+
+
 
 
 });
