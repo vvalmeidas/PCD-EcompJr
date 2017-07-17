@@ -1,13 +1,17 @@
 $(document).ready(function () {
-/*    $("h1").mouseenter(function () {
+   $("h1").mouseenter(function () {
 
-        $("header").css({
+        $("logo").css({
+
             'background-image': 'url(images/ecomp/logo.png)', 'transition': 'background-image 10s',
             'background-repeat': 'no-repeat', 'background-position': 'center', 'background-size': '300px'
 
         }).show(1000);
     });
-*/
+
+/*  ==========================================
+    Title appearing effect
+    ========================================== */
     var appear = false;
     (function() {
     var node = document.getElementById('message'),
@@ -22,9 +26,13 @@ $(document).ready(function () {
         }, 100);
     }());
 
-    $("#logo").hide();
-    $("#txtheader").hide();
+    //$("#logo").hide();
 
+/*  ======================================
+    Description fade in
+    ====================================== */
+
+    $("#txtheader").hide();
     $("h1").mouseenter(function(){ 
         if(appear){
             //$("#txtheader").show().delay(200);          
@@ -39,6 +47,9 @@ $(document).ready(function () {
         }
     });
 
+/*  =====================================
+    Soft scroll
+    ==================================== */
     var $doc = $('html, body');
     $('.scrollSuave').click(function () {
         $doc.animate({
@@ -47,12 +58,14 @@ $(document).ready(function () {
         return false;
     });
 
+/* =====================================
+    Modal windown
+    ==================================== */
+
     $("a[rel=modal]").click(function (ev) {
         ev.preventDefault();
 
         var id = $(this).attr("href");
-
-
 
         var alturaTela = $(document).height();
         var larguraTela = $(window).width();
