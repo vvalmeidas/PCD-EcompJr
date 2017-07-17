@@ -1,40 +1,65 @@
 $(document).ready(function () {
-   $("h1").mouseenter(function () {
+    $("h1").mouseenter(function () {
 
         $("logo").css({
 
-            'background-image': 'url(images/ecomp/logo.png)', 'transition': 'background-image 10s',
+            'background-image': 'url(assets/images/ecomp/logo.png)', 'transition': 'background-image 10s',
             'background-repeat': 'no-repeat', 'background-position': 'center', 'background-size': '300px'
 
         }).show(1000);
     });
 
-/*  ==========================================
-    Title appearing effect
-    ========================================== */
+    /*  ==========================================
+        Navbar effect
+        ========================================== */
+    (function ($) {
+        $(document).ready(function () {
+
+            // hide .navbar first
+            $("nav").hide();
+
+            // fade in .navbar
+            $(function () {
+                $(window).scroll(function () {
+
+                    // set distance user needs to scroll before we start fadeIn
+                    if ($(this).scrollTop() > 550) {
+                        $('nav').fadeIn();
+                    } else {
+                        $('nav').fadeOut();
+                    }
+                });
+            });
+
+        });
+    }(jQuery));
+
+    /*  ==========================================
+        Title appearing effect
+        ========================================== */
     var appear = false;
-    (function() {
-    var node = document.getElementById('message'),
-        message = "Programa de Controle Disciplinar",
-        current = message.split("").reverse(),
-        interval = setInterval(function() {
-        if (current.length)
-            node.innerHTML += current.pop();
-        else
-            clearInterval(interval);
-            appear = true;
-        }, 100);
+    (function () {
+        var node = document.getElementById('message'),
+            message = "Programa de Controle Disciplinar",
+            current = message.split("").reverse(),
+            interval = setInterval(function () {
+                if (current.length)
+                    node.innerHTML += current.pop();
+                else
+                    clearInterval(interval);
+                appear = true;
+            }, 100);
     }());
 
     //$("#logo").hide();
 
-/*  ======================================
-    Description fade in
-    ====================================== */
+    /*  ======================================
+        Description fade in
+        ====================================== */
 
     $("#txtheader").hide();
-    $("h1").mouseenter(function(){ 
-        if(appear){
+    $("h1").mouseenter(function () {
+        if (appear) {
             //$("#txtheader").show().delay(200);          
             //Sem parâmetros: o efeito é executado em 400ms
             $("#txtheader").fadeIn();
@@ -47,9 +72,9 @@ $(document).ready(function () {
         }
     });
 
-/*  =====================================
-    Soft scroll
-    ==================================== */
+    /*  =====================================
+        Soft scroll
+        ==================================== */
     var $doc = $('html, body');
     $('.scrollSuave').click(function () {
         $doc.animate({
@@ -58,9 +83,9 @@ $(document).ready(function () {
         return false;
     });
 
-/* =====================================
-    Modal windown
-    ==================================== */
+    /* =====================================
+        Modal windown
+        ==================================== */
 
     $("a[rel=modal]").click(function (ev) {
         ev.preventDefault();
@@ -101,30 +126,6 @@ $(document).ready(function () {
     $(".img").mouseleave(function () {
         $(this).removeClass("hover");
     });
-
-    (function ($) {
-        $(document).ready(function () {
-
-            // hide .navbar first
-            $("nav").hide();
-
-            // fade in .navbar
-            $(function () {
-                $(window).scroll(function () {
-
-                    // set distance user needs to scroll before we start fadeIn
-                    if ($(this).scrollTop() > 550) {
-                        $('nav').fadeIn();
-                    } else {
-                        $('nav').fadeOut();
-                    }
-                });
-            });
-
-        });
-    }(jQuery));
-
-
 
 
 });
