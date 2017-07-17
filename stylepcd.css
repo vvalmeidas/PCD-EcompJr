@@ -1,17 +1,25 @@
-.nomeMembro {
+.memberName {
     font-family: 'Raleway', sans-serif;
     margin-top: 210px;
     margin-left: 60px;
 }
 
-.classificacaoMembro {
+#insideWidow.memberName {
+    margin-top: 0;
+    margin-left: 0; 
+}
+
+.memberClassification {
     font-family: Helvetica;
     font-weight: bold;    
     font-size: 40%;
     color: #266fb7;
-    margin-top: 1px;
-    margin-left: 60px;
+    margin-top: 2px;
     margin-bottom: 20px;
+}
+
+#insideWidow.memberClassification {
+    margin-right: 50px;
 }
 
 .memberIcon {
@@ -19,15 +27,14 @@
     height: auto;
 }
 
-.pontuacaoTexto {
+.pointsText {
     font-family: 'Raleway', sans-serif;
 }
-
 /* ============================================================
   GLOBAL
 ============================================================ */
 
-.effects .img {
+.effects .img-memberIcon {
   position: relative;
   float: left;
   overflow: hidden;
@@ -90,8 +97,56 @@ a.expand {
   top: 50%;
   text-decoration: none;  
 }
-#effect-1 .img.hover .overlay {
+#effect-1 .img-memberIcon.hover .overlay {
   height: 100%;
   text-decoration: none;  
 }
 
+.img-memberWindow {
+  border: 2px solid #333333; 
+  float:left;
+
+}
+
+.window{
+    position:absolute;
+    width: 1000px;
+    background:#FFF;
+    border-radius:10px; 
+}
+
+.text-Window {
+    margin-left: 90px;
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    font-weight: 100;
+    font-size: 100%;
+}
+
+.historicTitle {
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#insideWindow.pointsText {
+  font-family: 'Raleway', serif;
+  font-weight: 800;
+  font-size: 30px;
+  margin-left: 40px;
+  color: #333333;  
+}
+
+hr {
+  size: 1000px;
+}
+
+.numberPunition {
+  color: #2b3e84;
+  font-weight: bold;
+}
+
+.topicPunition {
+  font-weight: bold;
+}

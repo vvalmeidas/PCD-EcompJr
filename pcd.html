@@ -3,14 +3,16 @@
 
 <head>
     <title>PCD - ECOMP Jr.</title>
-    <link rel="stylesheet" href="stylepcd.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylepcd.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+MS" rel="stylesheet">    
     <script src="jquery-3.2.1.js"></script>
     <script src="javascript.js"></script>
+    <script src="https://use.fontawesome.com/330b781289.js"></script>    
 </head>
 
 <body>
@@ -22,7 +24,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#">
-                <img src="http://www.ecompjr.com.br/css/images/logo.svg" width="30">
+                    <img src="http://www.ecompjr.com.br/css/images/logo.svg" width="30">
                 </a>
                 <!-- <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
             </div>
@@ -46,99 +48,156 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Programa de Controle Disciplinar</h1>
                 <hr>
-                    <a href="#AG" class="btn btn-primary btn-xl page-scroll scrollSuave">Iniciar</a>
+                <a href="#AG" class="btn btn-primary btn-xl page-scroll scrollSuave">Iniciar</a>
                 <hr>
             </div>
         </div>
     </header>
 
     <!-- Team Members Row -->
-    <div id='AF'>
+    <div id='AG'>
         <div class="col-lg-12">
-            <h2 class="page-header">A-F</h2>
+            <h2 class="page-header">A-G</h2>
         </div>
 
         <div class="container">
             <div class="row">
                 <div id="effect-1" class="col-lg-4 col-sm-6 effects clearfix">
-                    <div class="img img-circle img-responsive">
-                        <img class="memberIcon" src="images/fotos/member-1.jpg" width=200 height=200 alt="">
+                    <div class="img img-memberIcon img-circle img-responsive">
+                        <img class="memberIcon" src="images/fotos/member-1.jpg" width=200 height=200 alt="" />
                         <div class="overlay">
-                            <a href="#" class="expand pontuacaoTexto">20 PONTOS</a>
+                            <a href="#window1" rel="modal" class="expand pointsText">20 PONTOS</a>
                         </div>
                     </div>
-                    <h3 class="nomeMembro">Alisson Vilas
-                        <div class="classificacaoMembro">DIRETOR</div>
+
+                    <div class="window" id="window1">
+                        <a href="#" class="fechar">
+                            X Fechar
+                        </a>
+                        <h1 id="insideWidow" class="memberName text-right">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> Alisson Vilas
+                            <div id="insideWidow" class="memberClassification text-right">
+                                DIRETOR
+                            </div>
+                        </h1>
+                        <img class="img-memberWindow img-rounded img-responsive" src="images/fotos/member-1.jpg" width="245" height="325" alt=""></img>
+                        <hr class="dark">
+                        <p class="text-center historicTitle">HISTÓRICO</p>
+                        <hr class="dark">
+                        <div class="text-Window">
+                            <p class="text-Window text-center"><span class="numberPunition">#1</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#2</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#3</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#4</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#5</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#6</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                        </div>
+                        <p id="insideWindow" class="text-left pointsText">20 PONTOS</p>                        
+                    </div>
+                    <h3 class="memberName">Alisson Vilas
+                        <div class="memberClassification">DIRETOR</div>
                     </h3>
                 </div>
 
                 <div id="effect-1" class="col-lg-4 col-sm-6 effects clearfix">
-                    <div class="img img-circle img-responsive">
-                        <img class="memberIcon" src="images/fotos/member-2.jpg" width=200 height=200 alt="">
+                    <div class="img img-memberIcon img-circle img-responsive">
+                        <img class="memberIcon" src="images/fotos/member-2.jpg" width=200 height=200 alt="" />
                         <div class="overlay">
-                            <a href="#" class="expand pontuacaoTexto">20 PONTOS</a>
+                            <a href="#window2" rel="modal" class="expand pointsText">20 PONTOS</a>
                         </div>
                     </div>
-                    <h3 class="nomeMembro">Bernardo Rosa
-                        <div class="classificacaoMembro">DIRETOR</div>
+
+                    <div class="window" id="window2">
+                        <a href="#" class="fechar">
+                            X Fechar
+                        </a>
+                        <h1 id="insideWidow" class="memberName text-right">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> Bernardo Rosa
+                            <div id="insideWidow" class="memberClassification text-right">
+                                DIRETOR
+                            </div>
+                        </h1>
+                        <img class="img-memberWindow img-rounded img-responsive" src="images/fotos/member-2.jpg" width="245" height="325" alt=""></img>
+                        <hr class="dark">
+                        <p class="text-center historicTitle">HISTÓRICO</p>
+                        <hr class="dark">
+                        <div class="text-Window">
+                            <p class="text-Window text-center"><span class="numberPunition">#1</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#2</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#3</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#4</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#5</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                            <p class="text-Window text-center"><span class="numberPunition">#6</span> <span class="topicPunition">APLICADA POR:</span> XXXXXXXXXXX <span class="topicPunition">MOTIVO:</span> XXXXXX <span class="topicPunition">VALOR:</span> XXXXXXX <span class="topicPunition">DATA:</span> XXXXX</p>
+                        </div>
+                        <p id="insideWindow" class="text-left pointsText">20 PONTOS</p>                        
+                    </div>
+                    <h3 class="memberName">Bernardo Rosa
+                        <div class="memberClassification">DIRETOR</div>
                     </h3>
                 </div>
 
                 <div id="effect-1" class="col-lg-4 col-sm-6 effects clearfix">
-                    <div class="img img-circle img-responsive">
-                        <img class="memberIcon" src="images/fotos/member-3.jpg" width=200 height=200 salt="">
-                        <div class="overlay">
-                            <a href="#" class="expand pontuacaoTexto">20 PONTOS</a>
+                    <div>
+                        <div class="img img-memberIcon img-circle img-responsive">
+                            <img class="memberIcon" src="images/fotos/member-3.jpg" width=200 height=200 salt="">
+                            <div class="overlay">
+                                <a href="#" class="expand pointsText">20 PONTOS</a>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="nomeMembro">Bruno Vogel
-                        <div class="classificacaoMembro">CONSULTOR</div>
+                    <h3 class="memberName">
+                        Bruno Vogel
+                        <div class="memberClassification">
+                            CONSULTOR
+                        </div>
                     </h3>
                 </div>
-            </div>
-            <div class="row">
+
                 <div id="effect-1" class="col-lg-4 col-sm-6 effects clearfix">
-                    <div class="img img-circle img-responsive">
+                    <div class="img img-memberIcon img-circle img-responsive">
                         <img class="memberIcon" src="images/fotos/member-4.jpg" width=200 height=200 alt="">
                         <div class="overlay">
-                            <a href="#" class="expand pontuacaoTexto">20 PONTOS</a>
+                            <a href="#" class="expand pointsText">20 PONTOS</a>
                         </div>
                     </div>
-                    <h3 class="nomeMembro">Cássio Santos
-                        <div class="classificacaoMembro">DIRETOR</div>
+                    <h3 class="memberName">Cássio Santos
+                        <div class="memberClassification">DIRETOR</div>
                     </h3>
                 </div>
 
                 <div id="effect-1" class="col-lg-4 col-sm-6 effects clearfix">
-                    <div class="img img-circle img-responsive">
+                    <div class="img img-memberIcon img-circle img-responsive">
                         <img class="memberIcon" src="images/fotos/member-5.jpg" width=200 height=200 alt="">
                         <div class="overlay">
-                            <a href="#" class="expand pontuacaoTexto">20 PONTOS</a>
+                            <a href="#" class="expand pointsText">20 PONTOS</a>
                         </div>
                     </div>
-                    <h3 class="nomeMembro">Fábio Barros
-                        <div class="classificacaoMembro">CONSELHEIRO</div>
+                    <h3 class="memberName">Fábio Barros
+                        <div class="memberClassification">CONSELHEIRO</div>
                     </h3>
                 </div>
 
                 <div id="effect-1" class="col-lg-4 col-sm-6 effects clearfix">
-                    <div class="img img-circle img-responsive">
+                    <div class="img img-memberIcon img-circle img-responsive">
                         <img class="memberIcon" src="images/fotos/member-6.jpg" width=200 height=200 alt="">
                         <div class="overlay">
-                            <a href="#" class="expand pontuacaoTexto">20 PONTOS</a>
+                            <a href="#" class="expand pointsText">20 PONTOS</a>
                         </div>
                     </div>
-                    <h3 class="nomeMembro">Gledson de Oliveira
-                        <div class="classificacaoMembro">CONSELHEIRO</div>
+                    <h3 class="memberName">Gledson de Oliveira
+                        <div class="memberClassification">CONSELHEIRO</div>
                     </h3>
-                </div>                
-        </div>
-
-        <div id='GL'>
-            <div class="col-lg-12">
-                <h2 class="page-header">G-L</h2>
+                </div>
             </div>
         </div>
+    </div>
+    
+    </div>
+    </div>
+
+    <!-- mascara para cobrir o site -->
+    <div id="mascara"></div>
+    <br>
 </body>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
