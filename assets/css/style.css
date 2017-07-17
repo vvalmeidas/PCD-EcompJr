@@ -44,7 +44,7 @@ hr.dark{
   border-color: #75768E;
 }
 .bgRight{
-  background-image: url('images/ecomp/logo1.png'), url('images/ecomp/logo2.png');
+  background-image: url('../images/ecomp/logo1.png'), url('../images/ecomp/logo2.png');
   background-repeat: no-repeat, no-repeat;
   background-position-x: 1130px, -80px;
 }
