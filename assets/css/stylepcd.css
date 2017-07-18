@@ -4,6 +4,8 @@
     margin-left: 60px;
 }
 
+.scrollup_fade:hover {opacity:0.8;}
+
 #insideWidow.memberName {
     margin-top: 0px;
     margin-bottom: 0;

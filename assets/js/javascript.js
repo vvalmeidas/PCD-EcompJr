@@ -1,13 +1,4 @@
 $(document).ready(function () {
-    $("h1").mouseenter(function () {
-
-        $("logo").css({
-
-            'background-image': 'url(assets/images/ecomp/logo.png)', 'transition': 'background-image 10s',
-            'background-repeat': 'no-repeat', 'background-position': 'center', 'background-size': '300px'
-
-        }).show(1000);
-    });
 
     /*  ==========================================
         Navbar effect
@@ -40,7 +31,7 @@ $(document).ready(function () {
     var appear = false;
     (function () {
         var node = document.getElementById('message'),
-            message = "Programa de Controle Disciplinar",
+            message = "Programa de Controle Disciplinar";
             current = message.split("").reverse(),
             interval = setInterval(function () {
                 if (current.length)
@@ -48,6 +39,20 @@ $(document).ready(function () {
                 else
                     clearInterval(interval);
                 appear = true;
+            }, 100);
+    }());
+
+    var appear2 = false;
+    (function () {
+        var node2 = document.getElementById('message2'),
+            message2 = "O que é o Programa de Controle Disciplinar?";
+            current2 = message2.split("").reverse(),
+            interval2 = setInterval(function () {
+                if (current2.length)
+                    node2.innerHTML += current2.pop();
+                else
+                    clearInterval(interval2);
+                appear2 = true;
             }, 100);
     }());
 
